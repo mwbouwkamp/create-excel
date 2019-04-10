@@ -27,8 +27,8 @@ public class MailExcel {
         row2.createCell(0).setCellValue(mQuiz.quizName);
         int col = 1;
         for (Question question: mQuiz.questions) {
-            row1.createCell(col).setCellValue(question.question);
-            row2.createCell(col).setCellValue(question.answer);
+            row1.createCell(col).setCellValue("Question " + col);
+            row2.createCell(col).setCellValue(question.question);
             col++;
         }
         FileOutputStream file = null;
